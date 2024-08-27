@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """First app module"""
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_babel import Babel
 
 
@@ -16,6 +16,11 @@ class Config:
 app.config.from_object(Config)
 
 babel = Babel(app)
+
+@app.route('/')
+def index():
+    """Main Route"""
+    return render_template("1-index.html",)
 
 
 if __name__ == "__main__":
