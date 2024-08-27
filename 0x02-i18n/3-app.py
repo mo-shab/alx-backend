@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Task 2: Get locale from request
+'''Task 3: Parametrize templates
 '''
 
 from flask import Flask, render_template, request
